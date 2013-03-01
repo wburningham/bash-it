@@ -4,7 +4,7 @@ This is my personal version of the [bash it](https://github.com/revans/bash-it) 
 
 This has only been tested on OSX 10.7.
 
-##Installation
+##installation
 Link the bash profile to your user directory:
 
 	cd ~

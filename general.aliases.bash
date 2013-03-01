@@ -1,5 +1,4 @@
-cite about-alias
-about-alias 'general aliases'
+#!/usr/bin/env bash
 
 # List directory contents
 alias sl=ls
@@ -11,37 +10,16 @@ alias l1='ls -1'
 
 alias _="sudo"
 
-if [ $(uname) = "Linux" ]
-then
-  alias ls="ls --color=always"
-fi
-which gshuf &> /dev/null
-if [ $? -eq 1 ]
-then
-  alias shuf=gshuf
-fi
-
 alias c='clear'
 alias k='clear'
 alias cls='clear'
 
-alias edit="$EDITOR"
-alias pager="$PAGER"
-
-alias q='exit'
-
-alias irc="$IRC_CLIENT"
-
-alias rb='ruby'
-
-# Pianobar can be found here: http://github.com/PromyLOPh/pianobar/
-
-alias piano='pianobar'
+alias q="exit"
 
 alias ..='cd ..'         # Go up one directory
 alias ...='cd ../..'     # Go up two directories
-alias ....='cd ../../..' # Go up two directories
-alias -- -='cd -'        # Go back
+alias ....='cd ../../..' # Go up three directories
+alias -- -="cd -"        # Go back
 
 # Shell History
 alias h='history'
@@ -54,4 +32,5 @@ fi
 
 # Directory
 alias	md='mkdir -p'
-alias	rd='rmdir'
+alias	rd=rmdir
+

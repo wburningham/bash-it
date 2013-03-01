@@ -8,26 +8,32 @@ unset MAILCHECK
 
 # ----- BEGIN COLORS -----
 # Load colors
-	source "$HOME/.wesbash/colors.theme.bash"
-	source "$HOME/.wesbash/base.theme.bash"
+	source "$HOME/.bash-it/colors.theme.bash"
+	source "$HOME/.bash-it/base.theme.bash"
 	# colored grep
 	export GREP_OPTIONS='--color=auto'
 	export GREP_COLOR='1;33'
 
 	export LSCOLORS='Gxfxcxdxdxegedabagacad'
 
-	source "$HOME/.wesbash/bobby.theme.bash"
+	source "$HOME/.bash-it/bobby.theme.bash"
 # ----- END COLORS -----
 
 
 
 # ----- BEGIN ALIASES -----
-	source "$HOME/.wesbash/general.aliases.bash"
-	source "$HOME/.wesbash/git.aliases.bash"
-	# source "$HOME/.wesbash/git.plugins.bash"
+	source "$HOME/.bash-it/general.aliases.bash"
+	source "$HOME/.bash-it/git.aliases.bash"
+	# source "$HOME/.bash-it/git.plugins.bash"
 	alias g='grunt'
 	alias reload='source ~/.bash_profile'
 # ----- END ALIASES -----
+
+
+# ----- BEGIN PLUGINS -----
+	# git autocompletion
+	source "$HOME/.bash-it/git-completion.bash"
+# ----- END PLUGINS -----
 
 
 # ----- BEGIN HISTORY -----
